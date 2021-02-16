@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header .MuiFormGroup-root {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Edit-Profile, .Forum,.Login-Form, .Register-Form {
+  padding: 15px;
+  border: 1px solid #8c8c8c;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,0.5);
+  max-width: 500px;
+  margin: 0 auto;
+}
+.Login-Form, .Register-Form, .Forum {
+  background-image: linear-gradient(to right top, #e7e7e7, #ebebeb, #eeeeee, #f2f2f2, #f6f6f6);
+}
+.MuiInputBase-input.MuiOutlinedInput-input {
+  border: 1px solid black;
+  color: black;
+  border-radius: 3px;
+}
+.MuiInputBase-input.MuiOutlinedInput-input::placeholder {
+  color: black;
+}
+
+.App-header {
+  background-image: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu9Ijc2dO6_RIrtXWplAhaadi5zxWJrE7Qlw&usqp=CAU)';
+   background-repeat: "no-repeat";
+   background-size: 'cover';
+   background-position: 'center';
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(12, 11, 11);
+
+}
+
+#outlined-basic,.student-card {
+  background-image: linear-gradient(to right top, #e7e7e7, #ebebeb, #eeeeee, #f2f2f2, #f6f6f6);
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+header
+{
+	background-color:'red';
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	width: 100%;
+}
+
+header nav a
+{
+	padding: 27px;
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	position: relative;
+}
+
+header nav a:hover
+{
+	color: yellow;
+}
+
+header nav a span
+{
+	display: inline-block;
+	height: 5px;
+	background-color: yellow;
+	width: 0%;
+	top: 0;
+	left: 0;
+	transition: 0.7s;
+	position: absolute;
+}
+
+header nav a:hover span
+{
+	width: 100%;
+}
